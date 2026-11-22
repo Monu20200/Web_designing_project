@@ -1,0 +1,443 @@
+/* Importing the Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Removing default spacing from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+  background-color: #0f1111;
+  /* border-bottom: 3px solid #4f46e5; */
+}
+.study_sync{
+  display: flex;
+}
+.study_logo{
+  font-size: 24px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF6F6;
+}
+
+#home{display: flex;}
+.home-logo{margin-right: 5px;}
+#nav-fea{display: flex;}
+.nav-feature{ margin-right: 5px;}
+#nav_about{display: flex;}
+.nav-about{margin-right: 5px;}
+#nav_contact{display: flex;}
+.nav-contact{margin-right: 5px;}
+
+.logo span {
+  color: #8CC7C4;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #F8FAFC;
+  font-weight: 500;
+}
+
+/* Hover effect on menu links */
+.nav-links a:hover {
+  color: #ec4899;
+}
+
+/* ---------- Hero section ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 70px 50px;
+  background-color: #eef2ff;
+  margin: 20px 130px;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(55, 71, 90, 0.1);
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #2e64c9;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px 3px rgba(174, 226, 255, 1);
+}
+
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Colour for the word Sync */
+.sync {
+  color: #3674B5;
+}
+
+.hero-text p {
+  color: #64748b;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.btn-blue {
+  background-color: #578EF5;
+  color: #ffffff;
+  border: 2px solid #578EF5;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #578EF5;
+  border: 2px solid #578EF5;
+}
+
+/* Hover effect on buttons */
+.btn-blue:hover {
+  background-color: #3475ad;
+  border: 2px solid #3475ad;
+}
+
+.btn-white:hover {
+  background-color: #eef2ff;
+}
+
+/* ---------- Hero visual (dashboard card) ---------- */
+.hero-visual {
+  flex: 1;
+  position: relative;
+  /* so the small cards can be placed inside it */
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 340px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  border-top: 6px solid #8E1EA2;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h3 {
+  margin-bottom: 12px;
+}
+
+.dashboard li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.progress-text {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.progress-text strong {
+  color: #10b981;
+}
+
+/* Progress bar: grey box with a coloured box inside */
+.bar {
+  height: 12px;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+}
+
+.bar-fill {
+  width: 80%;
+  /* change this number to change the progress */
+  height: 12px;
+  background-color: #4DA8DA;
+  border-radius: 10px;
+}
+
+/* Small floating cards */
+.small-card {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #64748b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.small-card strong {
+  color: #ec4899;
+}
+
+.top-card {
+  top: 0;
+  right: 0;
+}
+
+.bottom-card {
+  bottom: 0;
+  left: 0;
+}
+
+/* ---------- Stats ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 50px 0;
+  margin: 0px 250px;
+}
+
+.stat {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.stat h3 {
+  font-size: 28px;
+}
+
+/* Colour classes (used by stats and step numbers) */
+.blue {
+  background-color: #3674B5;
+}
+
+.pink {
+  background-color: #ec4899;
+}
+
+.green {
+  background-color: #0D7C66;
+}
+
+.orange {
+  background-color: #FDB44B;
+}
+
+/* ---------- Common section style ---------- */
+.section {
+  padding: 60px 50px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+}
+
+.sub {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* ---------- Cards (features and steps) ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0px 130px
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Small hover effect on cards */
+.card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Coloured top border for feature cards */
+.blue-border {
+  border-top: 5px solid #63507e;
+}
+
+.pink-border {
+  border-top: 5px solid #ec4899;
+}
+
+.green-border {
+  border-top: 5px solid #0D7C66;
+}
+
+.orange-border {
+  border-top: 5px solid #f59e0b;
+}
+
+/* Round number for the steps */
+.number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ---------- About ---------- */
+.about-box {
+  background-color: #578EF5;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.about-box h2 {
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 60px;
+  padding: 30px;
+  text-align: center;
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+
+.footer h3 {
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer small {
+  display: block;
+  margin-top: 15px;
+  color: #94a3b8;
+}
+
+/* ---------- Responsive (phones and tablets) ---------- */
+@media (max-width: 800px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  /* Hero becomes one column, visual comes below the text */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  /* Stats in 2 columns */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px 0;
+  }
+
+  .section {
+    padding: 40px 20px 0;
+  }
+
+  /* Cards stack vertically */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-box {
+    padding: 25px 20px;
+  }
+}

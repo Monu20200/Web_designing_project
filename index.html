@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySync</title>
+  <!-- Linking the CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="study_sync">
+      <div class="study_logo"><i class="fa-brands fa-studiovinari"></i></div>
+      <a href="#home" class="logo">Study<span>Sync</span></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" id="home">
+          <div class="home-logo"><i class="fa-solid fa-house"></i></div>Home
+        </a></li>
+      <li><a href="#features" id="nav-fea">
+          <div class="nav-feature"><i class="fa-solid fa-bars"></i></div>Features
+        </a></li>
+      <li><a href="#about" id="nav_about">
+          <div class="nav-about"><i class="fa-solid fa-circle-info"></i></div>About
+        </a></li>
+      <li><a href="#contact" id="nav_contact">
+          <div class="nav-contact"><i class="fa-regular fa-envelope"></i></div>Contact
+        </a></li>
+    </ul>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero" id="home">
+
+    <!-- Left side -->
+    <div class="hero-text">
+      <span class="badge">STUDY SMARTER</span>
+      <h1>
+        Your Study.<br>
+        Your Goals.<br>
+        Your <span class="sync">Sync.</span>
+      </h1>
+      <p>
+        StudySync is a simple student portal designed to help you stay
+        organized, focused and consistent with your studies.
+      </p>
+      <a href="#contact" class="btn btn-blue">Get Started</a>
+      <a href="#features" class="btn btn-white">Explore More</a>
+    </div>
+
+    <!-- Right side: dashboard card -->
+    <div class="hero-visual">
+
+      <div class="dashboard">
+        <h3>Today's Study</h3>
+        <ul>
+          <li>✓ Mathematics</li>
+          <li>✓ C++ Programming</li>
+          <li>○ Electronics</li>
+        </ul>
+
+        <p class="progress-text">Study Progress: <strong>80%</strong></p>
+        <div class="bar">
+          <div class="bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Floating cards -->
+      <div class="small-card top-card"><strong>2 hrs</strong> studied</div>
+      <div class="small-card bottom-card"><strong>3 tasks</strong> completed</div>
+
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat blue">
+      <h3>6</h3>
+      <p>Study Tools</p>
+    </div>
+    <div class="stat pink">
+      <h3>100%</h3>
+      <p>Free to Use</p>
+    </div>
+    <div class="stat green">
+      <h3>24/7</h3>
+      <p>Access Anytime</p>
+    </div>
+    <div class="stat orange">
+      <h3>1</h3>
+      <p>Simple Portal</p>
+    </div>
+  </section>
+
+  <!-- Feature cards -->
+  <section class="section" id="features">
+    <h2>Our Features</h2>
+    <p class="sub">Simple tools to keep your student life on track.</p>
+
+    <div class="cards">
+      <div class="card blue-border">
+        <div class="icon">📚</div>
+        <h3>Organized</h3>
+        <p>Keep your study material and subjects organized.</p>
+      </div>
+      <div class="card pink-border">
+        <div class="icon">🎯</div>
+        <h3>Focused</h3>
+        <p>Stay focused on the topics that matter.</p>
+      </div>
+      <div class="card green-border">
+        <div class="icon">🔥</div>
+        <h3>Consistent</h3>
+        <p>Build better study habits every day.</p>
+      </div>
+      <div class="card orange-border">
+        <div class="icon">🗓️</div>
+        <h3>Timetable</h3>
+        <p>Plan your classes and study hours for the week.</p>
+      </div>
+      <div class="card blue-border">
+        <div class="icon">📝</div>
+        <h3>Notes</h3>
+        <p>Save quick notes and formulas for each subject.</p>
+      </div>
+      <div class="card pink-border">
+        <div class="icon">📈</div>
+        <h3>Progress</h3>
+        <p>See how much you have completed before exams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section">
+    <h2>How It Works</h2>
+    <p class="sub">Three easy steps to get started.</p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="number blue">1</span>
+        <h3>Add your subjects</h3>
+        <p>List the subjects you are studying this semester.</p>
+      </div>
+      <div class="card">
+        <span class="number pink">2</span>
+        <h3>Set daily goals</h3>
+        <p>Pick small tasks you want to finish each day.</p>
+      </div>
+      <div class="card">
+        <span class="number green">3</span>
+        <h3>Track your progress</h3>
+        <p>Tick off tasks and watch your progress bar grow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="about-box">
+      <h2>About StudySync</h2>
+      <p>
+        StudySync is a college Web Designing project made by first-year
+        B.Tech students. It is built using only HTML and CSS to show how
+        a student portal landing page can be designed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <h3>StudySync</h3>
+    <p>Study smarter. Stay consistent.</p>
+    <p>Email: studysync@gmail.com</p>
+    <small>
+      &copy;
+      2026 StudySync</small>
+  </footer>
+
+</body>
+
+</html>
